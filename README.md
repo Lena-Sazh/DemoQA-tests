@@ -1,1 +1,2 @@
-Text File test
+Text File
+In Java we trust
