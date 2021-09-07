@@ -14,17 +14,19 @@ import static com.codeborne.selenide.Selenide.*;
 public class StudentRegistrationFormTest {
 
     @BeforeAll
-    static void setup() {
+    static void befireAll() {
         Configuration.startMaximized = true;
+        Configuration.baseUrl = "https://demoqa.com";
     }
 
     @Test
-    void fillForm() {
-        open("https://demoqa.com/automation-practice-form");
+    void fillFormTest() {
+        open("/automation-practice-form");
         $("#firstName").setValue("Carol");
         $("#lastName").setValue("Denvers");
         $("#userEmail").setValue("Captain@Marvel.com");
-        $("#gender-radio-2 + label").click();
+        //$("#gender-radio-2 + label").click();
+        $("#genterWrapper").$(byText("Female")).click();
         $("#userNumber").setValue("1234567890");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").click();
@@ -39,6 +41,8 @@ public class StudentRegistrationFormTest {
         $("#state").find("input").setValue("NCR").pressEnter();
         $("#city").find("input").setValue("Gurgaon").pressEnter();
         $("#submit").scrollTo().click();
+
+        $(".modal-title").shouldHave(text("Thanks for submitting the form"));
 
         $("tbody").find(withText("Name")).parent().shouldHave(text("Carol Denvers"));
         $("tbody").find(withText("Email")).parent().shouldHave(text("Captain@Marvel.com"));
