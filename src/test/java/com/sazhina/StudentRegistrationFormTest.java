@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class StudentRegistrationFormTest {
 
     @BeforeAll
-    static void befireAll() {
+    static void beforeAll() {
         Configuration.startMaximized = true;
         Configuration.baseUrl = "https://demoqa.com";
     }
