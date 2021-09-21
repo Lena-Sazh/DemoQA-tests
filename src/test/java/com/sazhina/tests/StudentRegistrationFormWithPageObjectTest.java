@@ -1,7 +1,5 @@
-package com.sazhina;
+package com.sazhina.tests;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -10,20 +8,17 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
+import static com.sazhina.tests.TestData.firstName;
+import static com.sazhina.tests.TestData.lastName;
 
-public class StudentRegistrationFormTest {
+public class StudentRegistrationFormWithPageObjectTest extends TestBase {
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.startMaximized = true;
-        Configuration.baseUrl = "https://demoqa.com";
-    }
-
-    @Test
+@Test
     void fillFormTest() {
         open("/automation-practice-form");
-        $("#firstName").setValue("Carol");
-        $("#lastName").setValue("Denvers");
+
+        $("#firstName").setValue(firstName);
+        $("#lastName").setValue(lastName);
         $("#userEmail").setValue("Captain@Marvel.com");
         //$("#gender-radio-2 + label").click();
         $("#genterWrapper").$(byText("Female")).click();
