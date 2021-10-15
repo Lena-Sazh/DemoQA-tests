@@ -15,7 +15,7 @@ public class TestDataFaker {
             phone = faker.phoneNumber().subscriberNumber(10),
             currentAddress = faker.address().fullAddress(),
             gender = "Female",
-            month = "February",
+            month = "January",
             subject = "Math",
             hobby = "Sports",
             fileName = "picture.jpg",

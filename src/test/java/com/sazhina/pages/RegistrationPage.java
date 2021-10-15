@@ -34,7 +34,7 @@ public class RegistrationPage {
     public CalendarComponent calendar = new CalendarComponent();
 
     public void openPage() {
-        open("/automation-practice-form");
+        open("https://demoqa.com/automation-practice-form");
         formTitle.shouldHave(text(FORM_TITLE));
     }
 
