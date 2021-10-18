@@ -1,4 +1,4 @@
-package com.sazhina.tests;
+package com.sazhina.tests.demo;
 
 import com.github.javafaker.Faker;
 

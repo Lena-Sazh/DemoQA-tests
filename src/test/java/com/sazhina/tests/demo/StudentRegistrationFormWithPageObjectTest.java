@@ -1,9 +1,9 @@
-package com.sazhina.tests;
+package com.sazhina.tests.demo;
 
 import com.sazhina.pages.RegistrationPage;
 import org.junit.jupiter.api.Test;
 
-import static com.sazhina.tests.TestDataFaker.*;
+import static com.sazhina.tests.demo.TestDataFaker.*;
 import static io.qameta.allure.Allure.step;
 
 public class StudentRegistrationFormWithPageObjectTest extends TestBase {
