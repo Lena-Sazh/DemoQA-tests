@@ -8,10 +8,12 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static java.lang.String.format;
 
+@Tag("remoteTest")
 public class TestBase {
 
     public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
