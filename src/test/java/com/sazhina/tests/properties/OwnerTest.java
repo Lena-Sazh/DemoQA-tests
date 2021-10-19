@@ -8,20 +8,19 @@ import org.junit.jupiter.api.Test;
 import static java.lang.String.format;
 
 @Tag("properties")
-class OwnerTest {
+public class OwnerTest {
     public CredentialsConfig credentials =
             ConfigFactory.create(CredentialsConfig.class);
 
     @Test
-    void readCredentialTest() {
-        String username = credentials.username();
+    void readCredentialsTest() {
+        String login = credentials.username();
         String password = credentials.password();
-        String Url = System.getProperty("Url", "selenoid.autotests.cloud/wd/hub/");
 
-
-        System.out.println(username);
+        System.out.println(login);
         System.out.println(password);
-        String message = format("https://%s:%s@%s", username, password, Url);
+
+        String message = format("i login as %s with password %s", login, password);
         System.out.println(message);
     }
 }
