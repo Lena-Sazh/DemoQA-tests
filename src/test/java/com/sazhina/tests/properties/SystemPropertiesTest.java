@@ -3,7 +3,6 @@ package com.sazhina.tests.properties;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-
 public class SystemPropertiesTest {
     @Test
     void someTest(){
@@ -28,7 +27,6 @@ public class SystemPropertiesTest {
         System.out.println(value);
     }
     @Test
-    @Tag("properties")
     void someTest4() {
         String value = System.getProperty("browser", "chrome");
         String version = System.getProperty("version", "91");

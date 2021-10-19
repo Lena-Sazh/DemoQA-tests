@@ -13,7 +13,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static java.lang.String.format;
 
-@Tag("remoteTest")
 public class TestBase {
 
     public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
