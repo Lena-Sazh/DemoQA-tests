@@ -64,6 +64,7 @@ task empty_tests(type: Test) {
     }
 }
 
+// commands for local run in terminal
 /*
 java  \
 "-DprojectName=PROJECT_NAME" \

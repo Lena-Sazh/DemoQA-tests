@@ -13,7 +13,6 @@ public class StudentRegistrationFormWithPageObjectTest extends TestBase {
 @Test
     void fillFormTest() {
 
-
     step("Open registration form", () -> {
         registrationPage.openPage();
     });

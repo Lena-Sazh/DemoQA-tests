@@ -18,7 +18,7 @@ public class TestDataFaker {
             month = "January",
             subject = "Math",
             hobby = "Sports",
-            fileName = "picture.jpg",
+            fileName = "images/picture.jpg",
             state = "NCR",
             city = "Gurgaon";
 
