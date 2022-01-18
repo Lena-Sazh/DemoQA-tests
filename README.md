@@ -1,5 +1,6 @@
-### QA Guru / HW №2, №5, №10, №11, №12
-#### Some dummy tests to practice quick checks, Allure reports, configuring Jenkins job and Telegram bot notifications
+#### QA Guru / HW №2, №5, №10, №11, №12
+### CI & Notifications
+Some dummy tests to practice quick checks, Allure reports, configuring Jenkins job and Telegram bot notifications
 ___
 
 
